@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * paperclip — a calm, spacious research tool. Light + dark, generous whitespace,
+ * one restrained accent (a muted indigo). Deliberately not flowery.
+ */
+
+:root {
+  color-scheme: light;
+}
+:root.dark {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: #fbfbfa;
+  color: #1c1c1a;
+}
+:root.dark body {
+  background-color: #0f1115;
+  color: #e6e6e3;
+}
+
+/* Thin, unobtrusive scrollbars. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d4d4d0 transparent;
+}
+:root.dark * {
+  scrollbar-color: #363a42 transparent;
+}
+*::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #d4d4d0;
+  border-radius: 5px;
+}
+:root.dark *::-webkit-scrollbar-thumb {
+  background: #363a42;
+}
+
+/* A gentle rise-in for drawers and modals. */
+@keyframes pc-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pc-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.pc-fade {
+  animation: pc-fade 0.16s ease-out;
+}
+.pc-rise {
+  animation: pc-rise 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
