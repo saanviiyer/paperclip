@@ -1,13 +1,17 @@
 # paperclip
 
+> **Consolidated into rxiver.** rxiver is now the canonical research product and
+> owns discovery, folders, excerpt capture, APA/BibTeX export, and grounded
+> collection synthesis. This directory is preserved as a legacy implementation
+> and migration reference so no working code or browser data is destroyed.
+
 A calm, modern reference manager for researchers. Save papers with real citation
 metadata, group them into collections, export citations in several styles, and run an
 AI analysis across a whole collection to surface common threads, method comparisons,
 and open questions. The clean, uncluttered interface is the point: it is meant to be a
 nicer place to keep your papers than the usual reference managers.
 
-paperclip is a reference, citation, and cross-paper-analysis tool. It is deliberately
-separate from discovery or writing workspaces.
+paperclip was the original reference, citation, and cross-paper-analysis tool.
 
 ## What it does
 
